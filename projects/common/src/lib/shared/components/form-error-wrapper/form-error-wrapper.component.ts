@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component, ContentChild, DestroyRef, Input, OnInit, inject } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { FormControlDirective, NgControl, NgModel, ValidationErrors } from '@angular/forms';
-import { listenControlTouched } from '@saanbo/common/core/utils/rxjs/listen-control-touched';
-import { AppValidators } from '@saanbo/common/core/utils/validators';
+import { listenControlTouched } from '@delmar/common/core/utils/rxjs/listen-control-touched';
+import { AppValidators } from '@delmar/common/core/utils/validators';
 import { distinct, EMPTY, filter, map, merge, Observable, ReplaySubject, switchMap, tap } from 'rxjs';
 import { AsyncPipe } from '@angular/common';
 
@@ -10,7 +10,7 @@ import { ValidationMessageComponent } from '../validation-message/validation-mes
 
 /** Wrapper component that queries errors from form control directive and presents it. */
 @Component({
-	selector: 'saanboc-form-error-wrapper',
+	selector: 'delmarc-form-error-wrapper',
 	templateUrl: './form-error-wrapper.component.html',
 	styleUrls: ['./form-error-wrapper.component.css'],
 	changeDetection: ChangeDetectionStrategy.OnPush,

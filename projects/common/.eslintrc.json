@@ -16,7 +16,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "saanboc",
+            "prefix": "delmarc",
             "style": "camelCase"
           }
         ],
@@ -24,7 +24,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "saanboc",
+            "prefix": "delmarc",
             "style": "kebab-case"
           }
         ]

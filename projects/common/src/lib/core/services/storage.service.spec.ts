@@ -1,6 +1,6 @@
 import { fakeAsync, flush } from '@angular/core/testing';
 import { createServiceFactory, SpectatorService } from '@ngneat/spectator';
-import { createObserverSpy } from '@saanbo/common/testing/utils';
+import { createObserverSpy } from '@delmar/common/testing/utils';
 import { Subscription } from 'rxjs';
 import { z } from 'zod';
 

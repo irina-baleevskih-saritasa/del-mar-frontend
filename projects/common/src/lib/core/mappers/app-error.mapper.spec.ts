@@ -1,6 +1,6 @@
 import { HttpErrorResponse, HttpStatusCode } from '@angular/common/http';
 import { createServiceFactory, SpectatorService } from '@ngneat/spectator';
-import { createObserverSpy, getHttpStatusData } from '@saanbo/common/testing/utils';
+import { createObserverSpy, getHttpStatusData } from '@delmar/common/testing/utils';
 import { Observer, throwError } from 'rxjs';
 
 import { AppError } from '../models/app-error';

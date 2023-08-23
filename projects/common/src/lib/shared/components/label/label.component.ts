@@ -8,7 +8,7 @@ import { FormErrorWrapperComponent } from '../form-error-wrapper/form-error-wrap
  * Label component. Displays error and label for the input component.
  */
 @Component({
-	selector: 'saanboc-label',
+	selector: 'delmarc-label',
 	templateUrl: './label.component.html',
 	styleUrls: ['./label.component.css'],
 	changeDetection: ChangeDetectionStrategy.OnPush,

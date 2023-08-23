@@ -2,7 +2,7 @@ import { Location } from '@angular/common';
 import { Component } from '@angular/core';
 import { createRoutingFactory, mockProvider, SpectatorRouting } from '@ngneat/spectator';
 import { ReplaySubject } from 'rxjs';
-import { authGuard } from '@saanbo/common/core/guards/auth-guard';
+import { authGuard } from '@delmar/common/core/guards/auth-guard';
 import { Routes } from '@angular/router';
 
 import { UserService } from '../services/user.service';

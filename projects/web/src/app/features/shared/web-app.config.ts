@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { AppConfig } from '@saanbo/common/core/services/app.config';
+import { AppConfig } from '@delmar/common/core/services/app.config';
 import { environment } from 'projects/web/src/environments/environment';
 
 /** App-specific implementation of app config. */

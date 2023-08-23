@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router';
 
 /** Root component. */
 @Component({
-	selector: 'saanbow-root',
+	selector: 'delmarw-root',
 	templateUrl: './app.component.html',
 	styleUrls: ['./app.component.css'],
 	changeDetection: ChangeDetectionStrategy.OnPush,

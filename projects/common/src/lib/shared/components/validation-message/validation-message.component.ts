@@ -25,7 +25,7 @@ const VALIDATION_ERROR_MESSAGE_FACTORIES = {
  * Renders first error from control errors.
  */
 @Component({
-	selector: 'saanboc-validation-message',
+	selector: 'delmarc-validation-message',
 	templateUrl: './validation-message.component.html',
 	styleUrls: ['./validation-message.component.css'],
 	changeDetection: ChangeDetectionStrategy.OnPush,

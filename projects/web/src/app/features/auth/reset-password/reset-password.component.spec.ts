@@ -1,11 +1,11 @@
 import { ReactiveFormsModule } from '@angular/forms';
 import { Spectator, SpyObject, createComponentFactory, byTestId } from '@ngneat/spectator';
-import { PasswordReset } from '@saanbo/common/core/models/password-reset';
-import { UserService } from '@saanbo/common/core/services/user.service';
+import { PasswordReset } from '@delmar/common/core/models/password-reset';
+import { UserService } from '@delmar/common/core/services/user.service';
 import { of } from 'rxjs';
-import { LabelComponent } from '@saanbo/common/shared/components/label/label.component';
+import { LabelComponent } from '@delmar/common/shared/components/label/label.component';
 import { ActivatedRoute, RouterLink } from '@angular/router';
-import { LoadingDirective } from '@saanbo/common/shared/directives/loading.directive';
+import { LoadingDirective } from '@delmar/common/shared/directives/loading.directive';
 import { AsyncPipe, NgIf } from '@angular/common';
 
 import { ResetPasswordComponent } from './reset-password.component';

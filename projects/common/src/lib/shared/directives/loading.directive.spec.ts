@@ -8,26 +8,26 @@ describe('LoadingDirective', () => {
 	const createSpectator = createDirectiveFactory(LoadingDirective);
 
 	beforeEach(() => {
-		spectator = createSpectator(`<div saanbocLoading></div>`);
+		spectator = createSpectator(`<div delmarcLoading></div>`);
 	});
 
 	it('applies loading class on element', () => {
-		spectator.setInput('saanbocLoading', true);
-		expect(spectator.element.classList.contains('saanboc-loading')).toBe(true);
+		spectator.setInput('delmarcLoading', true);
+		expect(spectator.element.classList.contains('delmarc-loading')).toBe(true);
 	});
 
 	it('removes loading class on element', () => {
-		spectator.setInput('saanbocLoading', false);
-		expect(spectator.element.classList.contains('saanboc-loading')).toBe(false);
+		spectator.setInput('delmarcLoading', false);
+		expect(spectator.element.classList.contains('delmarc-loading')).toBe(false);
 	});
 
 	it('disables element', () => {
-		spectator.setInput('saanbocLoading', true);
+		spectator.setInput('delmarcLoading', true);
 		expect(spectator.element.hasAttribute('disabled')).toBe(true);
 	});
 
 	it('enables element', () => {
-		spectator.setInput('saanbocLoading', false);
+		spectator.setInput('delmarcLoading', false);
 		expect(spectator.element.hasAttribute('disabled')).toBe(false);
 	});
 });

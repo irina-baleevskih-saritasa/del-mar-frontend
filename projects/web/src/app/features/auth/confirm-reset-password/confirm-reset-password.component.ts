@@ -1,18 +1,18 @@
 import { ChangeDetectionStrategy, Component, DestroyRef, inject } from '@angular/core';
 import { FormGroup, NonNullableFormBuilder, Validators, ReactiveFormsModule } from '@angular/forms';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
-import { passwordResetConfirmationSchema } from '@saanbo/common/core/models/password-reset';
-import { UserService } from '@saanbo/common/core/services/user.service';
-import { assertNonNull } from '@saanbo/common/core/utils/assert-non-null';
-import { catchValidationData } from '@saanbo/common/core/utils/rxjs/catch-validation-error';
-import { toggleExecutionState } from '@saanbo/common/core/utils/rxjs/toggle-execution-state';
-import { FlatControlsOf } from '@saanbo/common/core/utils/types/controls-of';
-import { AppValidators } from '@saanbo/common/core/utils/validators';
+import { passwordResetConfirmationSchema } from '@delmar/common/core/models/password-reset';
+import { UserService } from '@delmar/common/core/services/user.service';
+import { assertNonNull } from '@delmar/common/core/utils/assert-non-null';
+import { catchValidationData } from '@delmar/common/core/utils/rxjs/catch-validation-error';
+import { toggleExecutionState } from '@delmar/common/core/utils/rxjs/toggle-execution-state';
+import { FlatControlsOf } from '@delmar/common/core/utils/types/controls-of';
+import { AppValidators } from '@delmar/common/core/utils/validators';
 import { BehaviorSubject } from 'rxjs';
 import { first, map, switchMap } from 'rxjs/operators';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { LoadingDirective } from '@saanbo/common/shared/directives/loading.directive';
-import { LabelComponent } from '@saanbo/common/shared/components/label/label.component';
+import { LoadingDirective } from '@delmar/common/shared/directives/loading.directive';
+import { LabelComponent } from '@delmar/common/shared/components/label/label.component';
 import { AsyncPipe } from '@angular/common';
 import { z } from 'zod';
 
@@ -35,7 +35,7 @@ type ConfirmResetPasswordFormData = FlatControlsOf<z.infer<typeof confirmResetPa
  * Recommended to use this URL `/confirm-password?token=<secret-token>`.
  */
 @Component({
-	selector: 'saanbow-confirm-reset-password',
+	selector: 'delmarw-confirm-reset-password',
 	templateUrl: './confirm-reset-password.component.html',
 	styleUrls: ['../auth.css', 'confirm-reset-password.component.css'],
 	changeDetection: ChangeDetectionStrategy.OnPush,

@@ -3,9 +3,9 @@ import { provideRouter } from '@angular/router';
 import { BrowserModule, bootstrapApplication } from '@angular/platform-browser';
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { HTTP_INTERCEPTORS, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
-import { AuthInterceptor } from '@saanbo/common/core/interceptors/auth.interceptor';
-import { RefreshTokenInterceptor } from '@saanbo/common/core/interceptors/refresh-token.interceptor';
-import { AppConfig } from '@saanbo/common/core/services/app.config';
+import { AuthInterceptor } from '@delmar/common/core/interceptors/auth.interceptor';
+import { RefreshTokenInterceptor } from '@delmar/common/core/interceptors/refresh-token.interceptor';
+import { AppConfig } from '@delmar/common/core/services/app.config';
 
 import { appRoutes } from './app/app.routes';
 import { AppComponent } from './app/app.component';

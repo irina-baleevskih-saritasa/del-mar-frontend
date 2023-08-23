@@ -7,7 +7,7 @@
 		<h1 class="auth-form__heading">Log In</h1>
 	</header>
 
-	<saanboc-label
+	<delmarc-label
 		class="auth-form__label"
 		labelText="Email"
 	>
@@ -18,8 +18,8 @@
 			placeholder="your@email.com"
 			data-testid="login-email-input"
 		/>
-	</saanboc-label>
-	<saanboc-label
+	</delmarc-label>
+	<delmarc-label
 		class="auth-form__label"
 		labelText="Password"
 	>
@@ -30,7 +30,7 @@
 			placeholder="yourSecretPassword123"
 			data-testid="login-password-input"
 		/>
-	</saanboc-label>
+	</delmarc-label>
 
 	<footer class="auth-form__footer">
 		<div class="auth-form__links">
@@ -42,7 +42,7 @@
 			data-testid="login-submit-button"
 			class="primary auth-form__submit-button"
 			type="submit"
-			[saanbocLoading]="isLoading$ | async"
+			[delmarcLoading]="isLoading$ | async"
 		>
 			Sign In
 		</button>

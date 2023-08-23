@@ -1,6 +1,6 @@
 import { byTestId, createComponentFactory, Spectator } from '@ngneat/spectator';
-import { ValidationErrorCode } from '@saanbo/common/core/models/validation-error-code';
-import { enumToArray } from '@saanbo/common/core/utils/enum-to-array';
+import { ValidationErrorCode } from '@delmar/common/core/models/validation-error-code';
+import { enumToArray } from '@delmar/common/core/utils/enum-to-array';
 
 import { ValidationMessageComponent } from './validation-message.component';
 

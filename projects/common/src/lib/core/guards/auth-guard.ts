@@ -1,7 +1,7 @@
 import { map } from 'rxjs';
 import { CanMatchFn, Router } from '@angular/router';
 import { inject } from '@angular/core';
-import { UserService } from '@saanbo/common/core/services/user.service';
+import { UserService } from '@delmar/common/core/services/user.service';
 
 interface AuthGuardParams {
 

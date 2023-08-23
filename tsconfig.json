@@ -4,10 +4,10 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@saanbo/common/*": [
+      "@delmar/common/*": [
         "projects/common/src/lib/*"
       ],
-      "@saanbo/common/testing/*": [
+      "@delmar/common/testing/*": [
         "projects/common/src/testing/*"
       ]
     },

@@ -62,7 +62,7 @@
           {
             "patterns": [
               {
-                "group": ["@saanbo/*", "!@saanbo/common"],
+                "group": ["@delmar/*", "!@delmar/common"],
                 "message": "You can not import from one application to another directly, please move the reusable/shared entities into common library. https://wiki.saritasa.rocks/frontend/frameworks/angular/project-structure#relationships-between-applications"
               }
             ]

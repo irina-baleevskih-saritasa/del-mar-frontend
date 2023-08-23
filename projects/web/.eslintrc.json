@@ -17,7 +17,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "saanbow",
+            "prefix": "delmarw",
             "style": "camelCase"
           }
         ],
@@ -25,7 +25,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "saanbow",
+            "prefix": "delmarw",
             "style": "kebab-case"
           }
         ],

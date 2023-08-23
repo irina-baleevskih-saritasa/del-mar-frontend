@@ -1,6 +1,6 @@
 import { inject, InjectionToken, Provider } from '@angular/core';
-import { buildRoutePaths } from '@saanbo/common/core/utils/route-paths/build-route-paths';
-import { commonRoutePaths } from '@saanbo/common/core/utils/route-paths/common-route-paths';
+import { buildRoutePaths } from '@delmar/common/core/utils/route-paths/build-route-paths';
+import { commonRoutePaths } from '@delmar/common/core/utils/route-paths/common-route-paths';
 
 /** Injection token that provide object with route web app paths. */
 const WEB_ROUTE_PATHS_TOKEN = new InjectionToken<WebRoutePaths>('Provide object with web route paths');

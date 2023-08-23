@@ -1,14 +1,14 @@
 import { ChangeDetectionStrategy, Component, DestroyRef, inject } from '@angular/core';
 import { FormGroup, NonNullableFormBuilder, Validators, ReactiveFormsModule } from '@angular/forms';
-import { Login, loginSchema } from '@saanbo/common/core/models/login';
-import { UserService } from '@saanbo/common/core/services/user.service';
-import { catchValidationData } from '@saanbo/common/core/utils/rxjs/catch-validation-error';
-import { toggleExecutionState } from '@saanbo/common/core/utils/rxjs/toggle-execution-state';
-import { FlatControlsOf } from '@saanbo/common/core/utils/types/controls-of';
+import { Login, loginSchema } from '@delmar/common/core/models/login';
+import { UserService } from '@delmar/common/core/services/user.service';
+import { catchValidationData } from '@delmar/common/core/utils/rxjs/catch-validation-error';
+import { toggleExecutionState } from '@delmar/common/core/utils/rxjs/toggle-execution-state';
+import { FlatControlsOf } from '@delmar/common/core/utils/types/controls-of';
 import { BehaviorSubject } from 'rxjs';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { LoadingDirective } from '@saanbo/common/shared/directives/loading.directive';
-import { LabelComponent } from '@saanbo/common/shared/components/label/label.component';
+import { LoadingDirective } from '@delmar/common/shared/directives/loading.directive';
+import { LabelComponent } from '@delmar/common/shared/components/label/label.component';
 import { AsyncPipe } from '@angular/common';
 import { RouterLink } from '@angular/router';
 
@@ -18,7 +18,7 @@ type LoginFormData = FlatControlsOf<Login>;
 
 /** Login page. */
 @Component({
-	selector: 'saanbow-login',
+	selector: 'delmarw-login',
 	templateUrl: './login.component.html',
 	styleUrls: ['../auth.css', './login.component.css'],
 	changeDetection: ChangeDetectionStrategy.OnPush,

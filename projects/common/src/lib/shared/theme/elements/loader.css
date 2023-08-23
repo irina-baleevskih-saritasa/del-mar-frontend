@@ -1,4 +1,4 @@
-.saanboc-loading {
+.delmarc-loading {
 	--spinner-color: white;
 	--spinner-size: 12px;
 
@@ -7,7 +7,7 @@
 	overflow: hidden;
 }
 
-.saanboc-loading::after {
+.delmarc-loading::after {
 	position: absolute;
 	top: calc(50% - var(--spinner-size));
 	left: calc(50% - var(--spinner-size));
@@ -19,11 +19,11 @@
 	border-radius: 50%;
 	border: 2px solid var(--spinner-color);
 	border-color: var(--spinner-color) transparent var(--spinner-color) transparent;
-	animation: saanboc-loading-spin 1.2s ease-in-out infinite;
+	animation: delmarc-loading-spin 1.2s ease-in-out infinite;
 	z-index: 1;
 }
 
-.saanboc-loading::before {
+.delmarc-loading::before {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -35,7 +35,7 @@
 	content: "";
 }
 
-@keyframes saanboc-loading-spin {
+@keyframes delmarc-loading-spin {
 	0% {
 		transform: rotate(0deg);
 	}

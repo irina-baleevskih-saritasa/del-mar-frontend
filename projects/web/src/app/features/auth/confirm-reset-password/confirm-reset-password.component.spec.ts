@@ -1,10 +1,10 @@
 import { ReactiveFormsModule } from '@angular/forms';
 import { byTestId, createRoutingFactory, SpectatorRouting, SpyObject } from '@ngneat/spectator';
-import { UserService } from '@saanbo/common/core/services/user.service';
+import { UserService } from '@delmar/common/core/services/user.service';
 import { of } from 'rxjs';
-import { LabelComponent } from '@saanbo/common/shared/components/label/label.component';
+import { LabelComponent } from '@delmar/common/shared/components/label/label.component';
 import { RouterLink } from '@angular/router';
-import { LoadingDirective } from '@saanbo/common/shared/directives/loading.directive';
+import { LoadingDirective } from '@delmar/common/shared/directives/loading.directive';
 import { AsyncPipe } from '@angular/common';
 
 import { ConfirmResetPasswordComponent, RESET_CONFIRMATION_TOKEN_QUERY_KEY } from './confirm-reset-password.component';

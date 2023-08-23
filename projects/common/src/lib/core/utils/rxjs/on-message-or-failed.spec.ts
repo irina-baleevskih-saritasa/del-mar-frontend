@@ -1,5 +1,5 @@
 import { fakeAsync, flush } from '@angular/core/testing';
-import { createObserverSpy } from '@saanbo/common/testing/utils';
+import { createObserverSpy } from '@delmar/common/testing/utils';
 import { Observer, of, throwError } from 'rxjs';
 
 import { onMessageOrFailed } from './on-message-or-failed';

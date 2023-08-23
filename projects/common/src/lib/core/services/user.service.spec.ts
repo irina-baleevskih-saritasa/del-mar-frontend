@@ -1,6 +1,6 @@
 import { createServiceFactory, mockProvider, SpectatorService, SpyObject } from '@ngneat/spectator';
-import { User } from '@saanbo/common/core/models/user';
-import { createObserverSpy } from '@saanbo/common/testing/utils';
+import { User } from '@delmar/common/core/models/user';
+import { createObserverSpy } from '@delmar/common/testing/utils';
 import { BehaviorSubject, Observer, of } from 'rxjs';
 
 import { AppError } from '../models/app-error';

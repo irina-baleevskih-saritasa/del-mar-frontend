@@ -1,5 +1,5 @@
 import { createComponentFactory, mockProvider, Spectator } from '@ngneat/spectator';
-import { UserService } from '@saanbo/common/core/services/user.service';
+import { UserService } from '@delmar/common/core/services/user.service';
 import { NEVER } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
 

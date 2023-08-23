@@ -6,8 +6,8 @@ import {
 	platformBrowserDynamicTesting,
 } from '@angular/platform-browser-dynamic/testing';
 import { defineGlobalsInjections } from '@ngneat/spectator';
-import { AppConfig } from '@saanbo/common/core/services/app.config';
-import { TestAppConfig } from '@saanbo/common/testing/test-app-config';
+import { AppConfig } from '@delmar/common/core/services/app.config';
+import { TestAppConfig } from '@delmar/common/testing/test-app-config';
 
 // First, initialize the Angular testing environment.
 getTestBed().initTestEnvironment(

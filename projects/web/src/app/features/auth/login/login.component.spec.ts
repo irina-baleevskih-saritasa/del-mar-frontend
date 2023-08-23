@@ -1,12 +1,12 @@
 import { fakeAsync, tick } from '@angular/core/testing';
 import { ReactiveFormsModule } from '@angular/forms';
 import { byTestId, createComponentFactory, Spectator, SpyObject } from '@ngneat/spectator';
-import { UserService } from '@saanbo/common/core/services/user.service';
+import { UserService } from '@delmar/common/core/services/user.service';
 import { delay, of } from 'rxjs';
 
-import { LabelComponent } from '@saanbo/common/shared/components/label/label.component';
+import { LabelComponent } from '@delmar/common/shared/components/label/label.component';
 import { ActivatedRoute, RouterLink } from '@angular/router';
-import { LoadingDirective } from '@saanbo/common/shared/directives/loading.directive';
+import { LoadingDirective } from '@delmar/common/shared/directives/loading.directive';
 import { AsyncPipe } from '@angular/common';
 
 import { LoginComponent } from './login.component';

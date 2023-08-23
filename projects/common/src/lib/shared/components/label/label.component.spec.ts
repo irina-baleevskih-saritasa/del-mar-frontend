@@ -25,7 +25,7 @@ describe('LabelComponent', () => {
 			it('renders it', () => {
 				const labelText = 'Test label';
 
-				spectator = createSpectator(`<saanboc-label labelText="${labelText}"/>`);
+				spectator = createSpectator(`<delmarc-label labelText="${labelText}"/>`);
 
 				expect(spectator.query(byTestId('label'))).toHaveText(labelText);
 			});
@@ -33,7 +33,7 @@ describe('LabelComponent', () => {
 
 		describe('is not specified', () => {
 			it('does not render it', () => {
-				spectator = createSpectator(`<saanboc-label/>`);
+				spectator = createSpectator(`<delmarc-label/>`);
 
 				expect(spectator.query(byTestId('label'))).toBeNull();
 			});
@@ -44,7 +44,7 @@ describe('LabelComponent', () => {
 		const contentText = 'Hello';
 
 		beforeEach(() => {
-			spectator = createSpectator(`<saanboc-label><span data-testid="message">${contentText}</span></saanboc-label>`);
+			spectator = createSpectator(`<delmarc-label><span data-testid="message">${contentText}</span></delmarc-label>`);
 		});
 
 		it('is rendered', () => {

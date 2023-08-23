@@ -1,6 +1,6 @@
 import { fakeAsync, tick } from '@angular/core/testing';
 import { FormControl } from '@angular/forms';
-import { createObserverSpy } from '@saanbo/common/testing/utils';
+import { createObserverSpy } from '@delmar/common/testing/utils';
 import { Observer, timer, tap } from 'rxjs';
 
 import { disableControlUntilEmitOrFailed } from './disable-control-until-emit';

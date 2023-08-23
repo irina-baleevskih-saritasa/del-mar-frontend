@@ -1,6 +1,6 @@
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { byTestId, createHostFactory, SpectatorHost } from '@ngneat/spectator';
-import { AppValidators } from '@saanbo/common/core/utils/validators';
+import { AppValidators } from '@delmar/common/core/utils/validators';
 
 import { ValidationMessageComponent } from '../validation-message/validation-message.component';
 
@@ -27,7 +27,7 @@ describe('FormErrorWrapperComponent', () => {
 			hostControl = new FormControl('');
 
 			spectator = createSpectator(
-				`<saanboc-form-error-wrapper><input [formControl]="${hostControlName}"></saanboc-form-error-wrapper>`,
+				`<delmarc-form-error-wrapper><input [formControl]="${hostControlName}"></delmarc-form-error-wrapper>`,
 				{
 					hostProps: {
 						[hostControlName]: hostControl,
@@ -57,7 +57,7 @@ describe('FormErrorWrapperComponent', () => {
 	describe('with ngModel', () => {
 		beforeEach(() => {
 			const ngModelPropertyKey = 'testProperty';
-			spectator = createSpectator(`<saanboc-form-error-wrapper><input [ngModel]=${ngModelPropertyKey}></saanboc-form-error-wrapper>`);
+			spectator = createSpectator(`<delmarc-form-error-wrapper><input [ngModel]=${ngModelPropertyKey}></delmarc-form-error-wrapper>`);
 		});
 
 		it('does not render any error', () => {
@@ -70,7 +70,7 @@ describe('FormErrorWrapperComponent', () => {
 			it('renders an error right away', () => {
 				const errorText = 'Test error';
 
-				spectator = createSpectator(`<saanboc-form-error-wrapper errorText="${errorText}"/>`);
+				spectator = createSpectator(`<delmarc-form-error-wrapper errorText="${errorText}"/>`);
 
 				expect(spectator.query(byTestId('error'))).toHaveText(errorText);
 			});
@@ -78,7 +78,7 @@ describe('FormErrorWrapperComponent', () => {
 
 		describe('asynchronously/later', () => {
 			it('does not render an error initially', () => {
-				spectator = createSpectator(`<saanboc-form-error-wrapper/>`);
+				spectator = createSpectator(`<delmarc-form-error-wrapper/>`);
 
 				expect(spectator.query(byTestId('error'))).toHaveExactText('');
 			});
@@ -86,7 +86,7 @@ describe('FormErrorWrapperComponent', () => {
 			it('updates error the text later', () => {
 				const errorText = 'Test error';
 
-				spectator = createSpectator(`<saanboc-form-error-wrapper/>`);
+				spectator = createSpectator(`<delmarc-form-error-wrapper/>`);
 
 				spectator.setInput({ errorText });
 				spectator.detectChanges();

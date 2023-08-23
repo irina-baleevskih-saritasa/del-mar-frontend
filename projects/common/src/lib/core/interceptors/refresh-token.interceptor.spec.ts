@@ -1,6 +1,6 @@
 import { HttpClient, HttpErrorResponse, HttpStatusCode, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { createHttpFactory, HttpMethod, SpectatorHttp, SpyObject } from '@ngneat/spectator';
-import { getHttpStatusData, TestSchedulerUtils } from '@saanbo/common/testing/utils';
+import { getHttpStatusData, TestSchedulerUtils } from '@delmar/common/testing/utils';
 import { cold, getTestScheduler, initTestScheduler } from 'jasmine-marbles';
 import { merge } from 'rxjs';
 
