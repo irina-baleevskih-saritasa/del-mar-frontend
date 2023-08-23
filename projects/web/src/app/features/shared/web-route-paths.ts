@@ -20,8 +20,12 @@ const WEB_ROUTE_PATHS_TOKEN = new InjectionToken<WebRoutePaths>('Provide object 
  * ```
  */
 export const webRoutePaths = buildRoutePaths({
-	...commonRoutePaths,
-	dashboard: { path: 'dashboard' },
+	home: {
+		path: commonRoutePaths.home.path,
+		children: {
+			calendar: { path: 'calendar' },
+		},
+	},
 	auth: {
 		path: 'auth',
 		children: {

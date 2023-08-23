@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 
+import { AppLayoutComponent } from './features/shared/components/layouts/app-layout/app-layout.component';
 import { webRoutePaths } from './features/shared/web-route-paths';
 
 /**
@@ -49,19 +50,25 @@ import { webRoutePaths } from './features/shared/web-route-paths';
 export const appRoutes: Routes = [
 	{
 		path: '',
-		redirectTo: webRoutePaths.dashboard.path,
-		pathMatch: 'full',
+		component: AppLayoutComponent,
+		children: [
+			{
+				path: '',
+				redirectTo: webRoutePaths.home.children.calendar.path,
+				pathMatch: 'full',
+			},
+			{
+				path: webRoutePaths.home.children.calendar.path,
+				loadChildren: () =>
+					import('./features/calendar/calendar.routes').then(r => r.calendarRoutes),
+			},
+			{ path: '**', redirectTo: '' },
+		],
 	},
 	{
 		path: webRoutePaths.auth.path,
 		loadChildren: () =>
 			import('./features/auth/auth.routes').then(r => r.authRoutes),
 	},
-	{
-		path: webRoutePaths.dashboard.path,
-		loadChildren: () =>
-			import('./features/dashboard/dashboard.routes').then(
-				r => r.dashboardRoutes,
-			),
-	},
+	{ path: '**', redirectTo: '' },
 ];

@@ -12,11 +12,11 @@ import { MatIconModule } from '@angular/material/icon';
 
 import { injectWebAppRoutes } from '../shared/web-route-paths';
 
-/** Placeholder dashboard. */
+/** Calendar page component. */
 @Component({
-	selector: 'delmarw-dashboard',
-	templateUrl: './dashboard.component.html',
-	styleUrls: ['./dashboard.component.css'],
+	selector: 'delmarw-calendar',
+	templateUrl: './calendar.component.html',
+	styleUrls: ['./calendar.component.css'],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	standalone: true,
 	imports: [
@@ -27,7 +27,7 @@ import { injectWebAppRoutes } from '../shared/web-route-paths';
 		AsyncPipe,
 	],
 })
-export class DashboardComponent {
+export class CalendarComponent {
 
 	/** Users service. */
 	public readonly userService = inject(UserService);

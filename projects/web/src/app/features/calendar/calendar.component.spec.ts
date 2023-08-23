@@ -1,15 +1,15 @@
 import { createComponentFactory, mockProvider, Spectator } from '@ngneat/spectator';
-import { UserService } from '@delmar/common/core/services/user.service';
 import { NEVER } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
+import { UserService } from '@delmar/common/core/services/user.service';
 
-import { DashboardComponent } from './dashboard.component';
+import { CalendarComponent } from './calendar.component';
 
-describe('DashboardComponent', () => {
-	let spectator: Spectator<DashboardComponent>;
+describe('CalendarComponent', () => {
+	let spectator: Spectator<CalendarComponent>;
 
 	const createSpectator = createComponentFactory({
-		component: DashboardComponent,
+		component: CalendarComponent,
 		providers: [
 			mockProvider(UserService, {
 				currentUser$: NEVER,
