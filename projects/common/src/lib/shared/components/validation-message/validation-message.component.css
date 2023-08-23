@@ -3,7 +3,7 @@
 	min-height: 0.8rem;
 	margin: 2px 0 4px 0;
 	line-height: 1;
-	color: var(--error-color);
+	color: var(--warn-color);
 	font-size: 0.8rem;
 	font-weight: bold;
 }

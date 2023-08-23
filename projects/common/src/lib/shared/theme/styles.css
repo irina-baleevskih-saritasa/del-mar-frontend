@@ -10,9 +10,10 @@
 html,
 body {
 	min-height: 100%;
+	margin: 0;
 	background: var(--background-color);
 	color: var(--background-contrast-color);
-	margin: 0;
+	font-size: var(--font-size);
 }
 
 /* Global animations */

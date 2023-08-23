@@ -1,12 +1,30 @@
 :root {
-	/*
-    Please use the following template to add new variables, dark/light valuations are optional.
+	--font-size: 14px;
 
-    --<name>-color: <color>;
-    --<name>-contrast-color: <contrast-color>;
-    --<name>-dark-color: <dark-color>;
-    --<name>-dark-contrast-color: <dark-contrast-color>;
-    --<name>-light-color: <light-color>;
-    --<name>-light-contrast-color: <light-contrast-color>;
-  */
+	--background-color: white;
+	--background-contrast-color: black;
+
+	/* Brand colors */
+	--primary-color: #333333;
+	--primary-dark-color: #111111;
+	--primary-light-color: #e5e5e5;
+	--primary-contrast-color: white;
+	--primary-dark-contrast-color: white;
+	--primary-light-contrast-color: black;
+
+	--accent-color: #2c7aff;
+	--accent-dark-color: #2c7aff;
+	--accent-light-color: #2c7aff;
+	--accent-contrast-color: white;
+	--accent-dark-contrast-color: white;
+	--accent-light-contrast-color: black;
+
+	--warn-color: #da3e33;
+	--warn-dark-color: #aa190f;
+	--warn-light-color: #e4746c;
+	--warn-contrast-color: white;
+	--warn-dark-contrast-color: white;
+	--warn-light-contrast-color: black;
+
+	--radius: 0;
 }
